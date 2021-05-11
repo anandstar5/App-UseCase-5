@@ -1,0 +1,15 @@
+<div class="container">
+<div class="row">
+    <div class="col-xs-12 col-sm-4">
+        <div class="list-group">
+            <a [routerLink]="['player',player.id,player.name,player.price]" 
+            [queryParams]="{AllowEdit:player.price<7.00?'1':'0'}"            
+            class="list-group-item" *ngFor="let player of players">{{player.name}}</a>            
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-4">
+        <router-outlet></router-outlet>
+    </div>
+
+</div>
+</div>

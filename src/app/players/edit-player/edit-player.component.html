@@ -1,0 +1,13 @@
+<div>
+    <div class="col-xs-12">
+        <div class="form-group">
+            <label for="name">Player Name</label>
+            <input type="text" class="form-control" name="name" value="{{player.name}}">
+            <hr>
+            <label for="price">Price</label>
+            <input type="text" class="form-control" name="price" value="{{player.price}}">
+        </div>
+        <hr>
+        <button class="btn btn-primary" (click)="onUpdatePlayer()">Update</button>
+    </div>
+</div>
